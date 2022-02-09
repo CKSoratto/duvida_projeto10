@@ -4,9 +4,9 @@ var seaImg,shipImg;
 function preload(){
   seaImg = loadImage("sea.png");
   shipImg1 = loadAnimation("ship-1.png");
-  shipImg1 = loadAnimation("ship-1");
-  shipImg1 = loadAnimation("ship-1.png","ship-1.png", "ship-2.png","ship-1.png");
-  shipImg1 = loadAnimation("ship-1", "ship-2", "ship-1", "ship-2")
+// shipImg1 = loadAnimation("ship-1");
+// shipImg1 = loadAnimation("ship-1.png","ship-1.png", "ship-2.png","ship-1.png");
+// shipImg1 = loadAnimation("ship-1", "ship-2", "ship-1", "ship-2")
 }
 
 function setup(){
@@ -34,10 +34,9 @@ function draw() {
   //código para redefinir o fundo
   if(sea.x < 0){
     sea.x = 0
-    sea.x = sea.width;
+  // sea.x = sea.width;
     sea.x = sea.width/8;
-    sea.y = sea.height
-  }
-    
+  // sea.y = sea.height
+  
+}    
   drawSprites();
-}
